@@ -1,14 +1,25 @@
-
 title: "Maths en Moica"
 description: "Ressources mathématiques pour tous les niveaux"
 theme: jekyll-theme-primer
 url: "https://mathsmoica.github.io"
 baseurl: "/projet_BIB"
 
-# Exclure les dossiers et fichiers inutiles
 exclude:
   - venv/
   - .venv/
+  - env/
+  - .env/
+  - bin/
+  - lib/
+  - include/
+  - "*.py"
+  - "*.pyc"
+  - "*.sql"
+  - "*.json"
+  - "*.ipynb"
+  - site/
+  - path/
+  - to/
   - .github/
   - Gemfile
   - Gemfile.lock
@@ -16,15 +27,11 @@ exclude:
   - LICENSE
   - node_modules/
   - .gitignore
-  - "*.py"
-  - "*.ipynb"
 
-# Configuration des plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Paramètres SEO
 seo:
   title: "Maths en Moica"
   description: "Ressources mathématiques interactives"
