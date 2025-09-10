@@ -1,0 +1,62 @@
+/* Réinitialisation */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+
+  /* Fond animé */
+  background: linear-gradient(270deg, #1a1a1a, #333);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Animation du fond */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Texte d’intro */
+#message {
+  opacity: 0;
+  font-size: 2em;
+  text-align: center;
+  animation: fadeIn 3s forwards;
+}
+
+/* Apparition progressive du texte */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Bouton */
+#btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Classe qui affiche le bouton */
+#btn.show {
+  opacity: 1;
+}
+
+/* Effet au survol */
+#btn:hover {
+  transform: scale(1.1);
+}
