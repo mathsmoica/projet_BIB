@@ -1,11 +1,7 @@
 venv/
-venv/
 .venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.env.local
-.env.production
+*.py
+*.sql
+*.json
 _site/
+.DS_Store
